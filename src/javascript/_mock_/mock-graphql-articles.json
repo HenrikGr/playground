@@ -1,0 +1,88 @@
+{
+  "edges": [
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/worker-threads/"
+        },
+        "frontmatter": {
+          "title": "Node.js worker threads",
+          "date": "November, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/react-how-to-use-context-part1/"
+        },
+        "frontmatter": {
+          "title": "How to use context in React - part 2",
+          "date": "November, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/react-how-to-use-context-part1/"
+        },
+        "frontmatter": {
+          "title": "How to use context in React - part 1",
+          "date": "November, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/js-object-explained/"
+        },
+        "frontmatter": {
+          "title": "JavaScript prototype",
+          "date": "November, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": ""
+        },
+        "frontmatter": {
+          "title": "JavaScript Object",
+          "date": "November, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/nodejs-architecture-details/"
+        },
+        "frontmatter": {
+          "title": "Node.js architecture",
+          "date": "January, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    },
+    {
+      "node": {
+        "fields": {
+          "slug": "/articles/nodejs-architecture-overview/"
+        },
+        "frontmatter": {
+          "title": "Node.js architecture",
+          "date": "January, 2019",
+          "publishedBy": "Henrik Grönvall"
+        }
+      }
+    }
+  ]
+}
