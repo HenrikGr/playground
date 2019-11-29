@@ -4,6 +4,7 @@
  * @copyright (c) 2018 - present, HGC AB.
  * @licence This source code is licensed under the MIT license
  */
+
 import { configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
