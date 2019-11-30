@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React  from 'react'
+import styled from 'styled-components'
 import logo from './logo.svg'
 
 const AppContainer = styled.div`
@@ -37,8 +37,6 @@ const AppLink = styled.a`
 `
 
 function App() {
-  const themeContext = useContext(ThemeContext);
-  console.log('Current theme: ', themeContext);
 
   return (
     <AppContainer>
