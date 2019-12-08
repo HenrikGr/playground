@@ -1,14 +1,14 @@
 /**
  * @prettier
- * @description Custom hook that using MutationObserver API
+ * @description Custom hook that using mutation-observer API
  *
- * MutationObserver is a Web API provided by modern browsers for
+ * mutation-observer is a Web API provided by modern browsers for
  * detecting changes in the DOM. With this API one can listen to
  * newly added or removed nodes, attribute changes, or make changes
  * in the text content of text nodes.
  *
- * Implementing MutationObserver into your app is rather easy.
- * You need to create a MutationObserver instance by passing it
+ * Implementing mutation-observer into your app is rather easy.
+ * You need to create a mutation-observer instance by passing it
  * a function that would be called every time a mutation has occurred
  *
  * The first argument of the function is a collection of all the
@@ -16,7 +16,7 @@
  * provides information about its type and the changes which have
  * occurred.
  *
- * var mutationObserver = new MutationObserver(function(mutations) {
+ * var mutationObserver = new mutation-observer(function(mutations) {
  *   mutations.forEach(function(mutation) {
  *     console.log(mutation);
  *   });
@@ -55,7 +55,7 @@ const observerConfig = {
 }
 
 /**
- * Custom hook using the MutationObserver API
+ * Custom hook using the mutation-observer API
  * @param {String} elementId - element id to observe
  * @param {Boolean} isActive - a flag indicating if observing element is active
  * @param {Function} callback - callback function to run when element changed been observed

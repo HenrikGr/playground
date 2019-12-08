@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "intersection-observer": "^0.7.0",
+    "lorem-ipsum": "^2.0.3",
     "prop-types": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

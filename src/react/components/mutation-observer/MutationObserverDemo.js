@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import useCountInterval, { TIME_INTERVAL } from '../../react/hooks/customHooks/useCountInterval'
-import useMutationObserver from '../../react/hooks/customHooks/useMutationObserver'
+import useCountInterval, { TIME_INTERVAL } from '../../hooks/useCountInterval/useCountInterval'
+import useMutationObserver from '../../hooks/useMutationObserver/useMutationObserver'
 
 const Layout = styled.section`
   display: flex;
@@ -43,7 +43,7 @@ const Button = styled.button`
 `
 
 /**
- * Demo of the MutationObserver Web API
+ * Demo of the mutation-observer Web API
  * @returns {*}
  * @constructor
  */
@@ -52,7 +52,7 @@ function MutationObserverDemo() {
   const [isMutationObserverActive, setIsMutationObserverActive] = useState(false)
   const count = useCountInterval(isCounterActive)
 
-  // Observe mutations
+  // Observe mutations by using the useMutationObserver hook
   useMutationObserver('observedNode', isMutationObserverActive, mutations => console.log('mutations', mutations))
 
   const handleStartCounterClick = () => {

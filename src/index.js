@@ -11,11 +11,14 @@ import './index.css'
 
 //import App from './css-modules/App'
 //import App from './styled-components/App';
-import MutationObserverDemo from './styled-components/MutationObserver'
+//import MutationObserverDemo from './react/components/mutation-observer/MutationObserverDemo'
+//import AnchorNavigation from './react/components/anchor-navigation/AnchorNavigation'
+import IntersectionAnimation from './react/components/intersection-animation/IntersectionAnimation'
 
 import * as serviceWorker from './serviceWorker'
 
-ReactDOM.render(<MutationObserverDemo />, document.getElementById('root'))
+
+ReactDOM.render(<IntersectionAnimation />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

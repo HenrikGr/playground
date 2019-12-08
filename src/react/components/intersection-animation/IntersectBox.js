@@ -8,7 +8,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 import { FadeBox, WidthBox } from './Boxes'
-//import useIntersection from '../../hooks/useIntersection/useIntersection'
 
 const { format } = new Intl.NumberFormat('sv', { maximumFractionDigits: 2 })
 

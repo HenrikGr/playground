@@ -21,7 +21,11 @@ const buildHexArray = quantity =>
       .padStart(3, "0")
   );
 
-
+/**
+ * Intersection API Demo
+ * @returns {*}
+ * @constructor
+ */
 function IntersectionAnimation() {
   return (
     <div className="App">

@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { peoples } from '../_mock_/mock-arrays'
-import { edges } from '../_mock_/mock-graphql-articles'
+import { people } from '../../_mock_/mock-arrays'
+import { edges } from '../../_mock_/mock-graphql-articles'
 import { groupByNestedProperty, groupByProperty } from './index'
 
 /**
@@ -15,7 +15,7 @@ import { groupByNestedProperty, groupByProperty } from './index'
 describe("Transform array of objects to an object with keys", () => {
 
   it("groupByProperty - groups an array of flat objects by object property", () => {
-    const groupedPeople = groupByProperty(peoples, 'country');
+    const groupedPeople = groupByProperty(people, 'country');
     const expected = {
       Sweden: [
         { firstname: 'Kalle', lastName: 'Kula', country: 'Sweden' },
