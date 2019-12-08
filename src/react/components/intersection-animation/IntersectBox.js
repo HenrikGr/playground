@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useState,useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import { FadeBox, WidthBox } from './Boxes'
 //import useIntersection from '../../hooks/useIntersection/useIntersection'
@@ -64,16 +64,15 @@ function IntersectBox(props) {
    * values (via Object.is) to determine whether your effect callback should be called.
    */
   useEffect(() => {
-
     /**
      * Create a new observer
      * @type {IntersectionObserver}
      */
     const observer = new IntersectionObserver(handleIntersections, {
-        root: null,
-        rootMargin: '0px',
-        threshold: buildThresholdList()
-      })
+      root: null,
+      rootMargin: '0px',
+      threshold: buildThresholdList()
+    })
 
     // Start observe the target
     if (targetRef) {
@@ -84,9 +83,7 @@ function IntersectBox(props) {
      * Clean up the observer on un-mounting
      */
     return () => observer.disconnect()
-
   }, [targetRef])
-
 
   const Component = compToRender[props.boxType]
 
