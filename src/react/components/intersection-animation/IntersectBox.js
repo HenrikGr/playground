@@ -51,7 +51,6 @@ function IntersectBox(props) {
     entries.forEach(entry => {
       // If intersecting pass intersecting data to handler function
       if (entry.isIntersecting) {
-        console.log('handleIntersection')
         updateEntry(entry)
       }
     })
