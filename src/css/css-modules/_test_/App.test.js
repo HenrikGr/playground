@@ -19,5 +19,4 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   })
 
-
 })
