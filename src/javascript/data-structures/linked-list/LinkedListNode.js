@@ -1,19 +1,46 @@
 /**
- * LinkedListNode class
- * @class
+ * LinkedListNode
+ */
+
+/**
+ * Linked list data
+ * @typedef {*} LinkedListNodeData
+ */
+
+/**
+ * Represent a single node in a linked list.
+ *
+ * @example
+ * const node = new LinkListNode(data)
+ *
+ * @class LinkedListNode
  */
 export default class LinkedListNode {
   /**
-   * LinkedListNode constructor
-   * @param value
-   * @param next
+   * Create a new instance of a LinkedListNode
+   * @param {*} data - data to store
    */
-  constructor(value, next = null) {
-    this.value = value
-    this.next = next
+  constructor(data) {
+    /**
+     * Arbitrary data stored in a node
+     * @type {*}
+     */
+    this.data = data
+
+    /**
+     * A pointer to the next node in the LinkedList
+     * @type {LinkedListNode}
+     */
+    this.next = null
   }
 
-  toString(callback) {
-    return callback ? callback(this.value) : `${this.value}`
+  /**
+   * Get the node's value as string
+   * @param {Function} [callback] - function to convert value to string
+   * @returns {*|string} value of the node
+   * @public
+   */
+  toValue(callback) {
+    return callback ? callback(this.data) : `${this.data}`
   }
 }
