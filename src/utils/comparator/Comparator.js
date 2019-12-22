@@ -1,44 +1,38 @@
 /**
- * Comparator class should be used to
+ * Comparator
  * @module Comparator
  */
 
 /**
- * Comparator objects can be used to perform different common
- * checks such as equal, lessThan, greaterThan, lestThanOrEqual, etc.
+ * A comparator to perform common logical operations
+ * comparing different variables with each other.
  *
- * The comparator has the following methods;
- * - compare, either default comparator function or a custom
- * - equal
- * - lessThan
- * - greaterThan
- * - lessThanOrEqual
- * - greaterThanOrEqual
- * - reverse
+ * To compare values, a static compare function is used
+ * by default. The static compare function assumes values to
+ * be compared are of either string or number type.
  *
- * The default comparator function assumes values to be compared are of either string or number
- * For more complex data types, create a custom comparator function and pass it as an argument
- * when creating an object.
+ * For more complex comparision, provide a custom compare
+ * function when creating a new comparator object.
  * @class
  */
 export default class Comparator {
   /**
-   * @param {function(a: *, b: *)} [compareFunction] - Custom comparator function.
-   * Use it if you want to compare more complex data types than strings or numbers.
+   * Create a comparator object
+   * @param [compareFunction] a custom compare function (optional)
    */
   constructor(compareFunction) {
     /**
-     * Comparator function
-     * @type {(function(*, *))|Comparator.defaultCompareFunction}
-     * @private
+     * Compare function
+     * @type {*|Comparator.defaultCompareFunction}
      */
     this.compare = compareFunction || Comparator.defaultCompareFunction;
   }
 
   /**
-   * Default comparison function. It assumes that "a" and "b" are strings or numbers.
-   * @param {(string|number)} a
-   * @param {(string|number)} b
+   * Default comparison function that assumes
+   * that "a" and "b" are strings or numbers.
+   * @param {(string|number)} a - value to be compared
+   * @param {(string|number)} b - value to be compared
    * @returns {number}
    */
   static defaultCompareFunction(a, b) {
@@ -51,8 +45,8 @@ export default class Comparator {
 
   /**
    * Checks if two variables are equal.
-   * @param {*} a
-   * @param {*} b
+   * @param {*} a - value to be compared
+   * @param {*} b - value to be compared
    * @return {boolean}
    */
   equal(a, b) {
@@ -61,8 +55,8 @@ export default class Comparator {
 
   /**
    * Checks if variable "a" is less than "b".
-   * @param {*} a
-   * @param {*} b
+   * @param {*} a - value to be compared
+   * @param {*} b - value to be compared
    * @return {boolean}
    */
   lessThan(a, b) {
@@ -71,8 +65,8 @@ export default class Comparator {
 
   /**
    * Checks if variable "a" is greater than "b".
-   * @param {*} a
-   * @param {*} b
+   * @param {*} a - value to be compared
+   * @param {*} b - value to be compared
    * @return {boolean}
    */
   greaterThan(a, b) {
@@ -81,8 +75,8 @@ export default class Comparator {
 
   /**
    * Checks if variable "a" is less than or equal to "b".
-   * @param {*} a
-   * @param {*} b
+   * @param {*} a - value to be compared
+   * @param {*} b - value to be compared
    * @return {boolean}
    */
   lessThanOrEqual(a, b) {
@@ -91,8 +85,8 @@ export default class Comparator {
 
   /**
    * Checks if variable "a" is greater than or equal to "b".
-   * @param {*} a
-   * @param {*} b
+   * @param {*} a - value to be compared
+   * @param {*} b - value to be compared
    * @return {boolean}
    */
   greaterThanOrEqual(a, b) {
