@@ -3,8 +3,10 @@
  */
 
 /**
- * Linked list data
- * @typedef {*} LinkedListNodeData
+ * Linked list node
+ * @typedef {Object} LinkedListNode
+ * @property {*} data - arbitrary data
+ * @property {LinkedListNode} next - reference to the next node
  */
 
 /**
@@ -13,23 +15,23 @@
  * @example
  * const node = new LinkListNode(data)
  *
- * @class LinkedListNode
+ * @class
  */
 export default class LinkedListNode {
   /**
    * Create a new instance of a LinkedListNode
-   * @param {*} data - data to store
+   * @param {LinkedListNode.data} data - arbitrary data to store
    */
   constructor(data) {
     /**
      * Arbitrary data stored in a node
-     * @type {*}
+     * @type {LinkedListNode.data}
      */
     this.data = data
 
     /**
      * A pointer to the next node in the LinkedList
-     * @type {LinkedListNode}
+     * @type {LinkedListNode.next}
      */
     this.next = null
   }
