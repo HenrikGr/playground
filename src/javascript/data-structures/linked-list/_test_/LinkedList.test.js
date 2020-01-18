@@ -1,5 +1,5 @@
 import LinkedList from '../LinkedList'
-import Comparator from '../../../../utils/comparator/Comparator'
+import Comparator from '../../../../modules/comparator/Comparator'
 
 
 describe('LinkedList', () => {

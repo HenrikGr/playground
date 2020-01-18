@@ -5,14 +5,14 @@
 
 /**
  * A comparator to perform common logical operations
- * comparing different variables with each other.
+ * comparing different values.
  *
  * To compare values, a static compare function is used
  * by default. The static compare function assumes values to
  * be compared are of either string or number type.
  *
  * For more complex comparision, provide a custom compare
- * function when creating a new comparator object.
+ * function when creating a new comparator instance.
  * @class
  */
 export default class Comparator {
@@ -33,7 +33,7 @@ export default class Comparator {
    * that "a" and "b" are strings or numbers.
    * @param {(string|number)} a - value to be compared
    * @param {(string|number)} b - value to be compared
-   * @returns {number}
+   * @returns {number} 0 if equal, -1 if "a" is less than "b", otherwise 1
    */
   static defaultCompareFunction(a, b) {
     if (a === b) {
@@ -44,7 +44,7 @@ export default class Comparator {
   }
 
   /**
-   * Checks if two variables are equal.
+   * Checks if variable "a" is equal to "b".
    * @param {*} a - value to be compared
    * @param {*} b - value to be compared
    * @return {boolean}

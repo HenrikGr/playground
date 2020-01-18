@@ -3,8 +3,8 @@
  */
 
 import LinkedListNode from './LinkedListNode'
-import Comparator from '../../../utils/comparator/Comparator'
-import invariant from '../../invariant'
+import Comparator from '../../../modules/comparator/Comparator'
+import invariant from '../../../modules/invariant'
 
 /*
  * These symbols are used to represent properties that should not be part of
