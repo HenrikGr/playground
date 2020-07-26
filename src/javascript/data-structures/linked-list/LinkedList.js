@@ -3,7 +3,7 @@
  */
 
 import LinkedListNode from './LinkedListNode'
-import Comparator from '../../../modules/comparator/Comparator'
+import Comparator from '../../design-patterns/comparator/Comparator'
 import invariant from '../../../modules/invariant'
 
 /*

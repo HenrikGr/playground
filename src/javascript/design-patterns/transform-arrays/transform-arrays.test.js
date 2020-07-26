@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { people } from '../../_mock_/mock-arrays'
-import { edges } from '../../_mock_/mock-graphql-articles'
+import { people } from '../../../_mock_/mock-arrays'
+import { edges } from '../../../_mock_/mock-graphql-articles.json'
 import { groupByNestedProperty, groupByProperty } from './index'
 
 /**

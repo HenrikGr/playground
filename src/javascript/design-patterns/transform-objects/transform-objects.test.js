@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { edges } from '../../_mock_/mock-graphql-articles'
+import { edges } from '../../../_mock_/mock-graphql-articles.json'
 import { flatten } from './index'
 
 /**
