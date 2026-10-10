@@ -32,3 +32,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+<!-- ChatGPT access test: read-and-write verified from Existerane chatt i projektet Börshandel on 2026-10-10 -->
